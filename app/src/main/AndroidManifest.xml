@@ -8,14 +8,18 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".DafKnisa">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".fridge"></activity>
+        <activity android:name=".Fridge" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Fridge2" />
+        <activity android:name=".CustomAdapter" />
+        <activity android:name=".Metsrakhim"></activity>
     </application>
 
 </manifest>

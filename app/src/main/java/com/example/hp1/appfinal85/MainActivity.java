@@ -15,16 +15,15 @@ public class MainActivity extends AppCompatActivity implements  AdapterView.OnIt
 
 
     ListView lvFood;
-    ArrayAdapter<String> adapter;
-    ArrayList<String> arrFood=new ArrayList<String>();
+
+    ArrayList<Item> arrFood=new ArrayList<Item>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        arrFood.add("fridge");
-        arrFood.add("recipe");
-        arrFood.add("about");
-        adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, arrFood);
+        arrFood.add(new Item("First Item", R.drawable.brad1));
+        arrFood.add(new Item("First Item", R.drawable.fruits));
+        CustomAdapter adapter = new CustomAdapter(this, R.layout.custom_row, arrFood);
 
         lvFood = (ListView) findViewById(R.id.lvFood);
         lvFood.setAdapter(adapter);
@@ -41,8 +40,10 @@ public class MainActivity extends AppCompatActivity implements  AdapterView.OnIt
     @Override
     public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
        if (position==0){
-           Intent i = new Intent(this,fridge.class);
+/*
+           Intent i = new Intent(this,.class);
            startActivity(i);
+*/
 
        }
 

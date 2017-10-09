@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_daf_knisa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/insiderefrigerator"
+    tools:context="com.example.hp1.appfinal85.DafKnisa">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:id="@+id/tv1"
+        android:width="300dp"
+        android:height="55dp" />
+
+    <Button
+        android:text="add recipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="127dp"
+        android:id="@+id/btAdd"
+        android:height="50dp"
+        android:width="300dp"
+        android:layout_below="@+id/btFind"
+        android:layout_alignEnd="@+id/tv1"
+        android:layout_marginEnd="12dp" />
+
+    <Button
+        android:text="find recipes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btFind"
+        android:elevation="0dp"
+        android:width="300dp"
+        android:height="50dp"
+        android:layout_below="@+id/tv1"
+        android:layout_alignStart="@+id/btAdd"
+        android:layout_marginTop="22dp" />
+
+
+</RelativeLayout>
