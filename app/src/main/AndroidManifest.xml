@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.hp1.appfinal85">
-
+    .DafKnisa
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DafKnisa">
+        <activity android:name=".Metsrakhim">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,8 +18,14 @@
         <activity android:name=".Fridge" />
         <activity android:name=".MainActivity" />
         <activity android:name=".Fridge2" />
-        <activity android:name=".CustomAdapter" />
-        <activity android:name=".Metsrakhim"></activity>
+        <activity android:name=".DafKnisa" />
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".CameraActivity" />
+        <activity android:name=".AddRecepis" />
+        <activity android:name=".RecipeActivity" />
+        <activity android:name=".AllRecipeActivity" />
+        <activity android:name=".AddNewRecipe" />
+        <activity android:name=".IngredientActivity"></activity>
     </application>
 
 </manifest>

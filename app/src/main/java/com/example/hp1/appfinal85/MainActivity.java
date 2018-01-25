@@ -11,7 +11,8 @@ import android.widget.EditText;
 import android.widget.ListView;
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity implements  AdapterView.OnItemLongClickListener,View.OnClickListener {
+public class
+MainActivity extends AppCompatActivity implements  AdapterView.OnItemLongClickListener,View.OnClickListener {
 
 
     ListView lvFood;
